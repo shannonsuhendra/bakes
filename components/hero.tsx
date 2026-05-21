@@ -1,9 +1,9 @@
 export function Hero() {
   return (
-    <section className="h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] mt-16 md:mt-20 flex items-center px-6">
+    <section className="min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] mt-16 md:mt-20 flex items-center px-6 py-12 md:py-16">
       <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          <div className="flex-1 text-left">
+          <div className="flex-1 text-left md:pl-8 lg:pl-12">
             <h1 className="font-[family-name:var(--font-title)] text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-foreground mb-6">
               nom nom
             </h1>
@@ -19,7 +19,7 @@ export function Hero() {
               </p>
             </div>
           </div>
-          <div className="flex-1 w-full max-w-md md:max-w-none">
+          <div className="flex-1 w-full max-w-md md:max-w-none md:pr-8 lg:pr-12">
             <div className="relative aspect-[4/3] md:aspect-square max-h-[60vh] rounded-2xl overflow-hidden">
               <img
                 src="/bakes/images/shannon-baking.jpg"
