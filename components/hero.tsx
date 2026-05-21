@@ -14,7 +14,7 @@ export function Hero() {
           <div className="flex-1 w-full max-w-md md:max-w-none">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <img
-                src="/images/shannon-baking.jpg"
+                src="/bakes/images/shannon-baking.jpg"
                 alt="Shannon baking in her home kitchen"
                 className="absolute inset-0 h-full w-full object-cover"
               />
