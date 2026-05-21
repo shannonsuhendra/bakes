@@ -1,7 +1,7 @@
 export function Hero() {
   return (
-    <section className="min-h-[80vh] flex items-center pt-20 px-6">
-      <div className="py-20 max-w-6xl mx-auto w-full">
+    <section className="h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] mt-16 md:mt-20 flex items-center px-6">
+      <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="flex-1 text-left">
             <h1 className="font-[family-name:var(--font-title)] text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight text-foreground mb-6">
@@ -12,7 +12,7 @@ export function Hero() {
             </p>
           </div>
           <div className="flex-1 w-full max-w-md md:max-w-none">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+            <div className="relative aspect-[4/3] md:aspect-square max-h-[60vh] rounded-2xl overflow-hidden">
               <img
                 src="/bakes/images/shannon-baking.jpg"
                 alt="Shannon baking in her home kitchen"
