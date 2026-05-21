@@ -8,10 +8,10 @@ export function StagingExperiences() {
     <section id="staging" className="py-20 border-t border-border/50 bg-secondary/40">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 md:mb-20">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-3">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">
             Behind the counter
           </p>
-          <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-bold text-foreground">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-foreground">
             My Staging Experiences
           </h2>
         </div>
@@ -39,16 +39,16 @@ function StagingExperienceRow({ experience }: { experience: StagingExperience })
     >
       <div
         className={`flex flex-col justify-center min-w-0 ${
-          imageOnRight ? "" : "md:col-start-2"
+          imageOnRight ? "md:pr-6" : "md:col-start-2 md:pl-6"
         }`}
       >
-        <p className="text-sm tracking-[0.2em] uppercase text-muted-foreground mb-3">
+        <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3">
           {experience.date}
         </p>
-        <h3 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-4 md:mb-6 leading-tight">
+        <h3 className="font-[family-name:var(--font-display)] text-2xl md:text-3xl lg:text-[2.25rem] font-bold text-foreground mb-4 md:mb-6 leading-tight">
           {experience.venue}
         </h3>
-        <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+        <p className="text-muted-foreground text-sm md:text-base leading-relaxed text-justify">
           {experience.description}
         </p>
       </div>

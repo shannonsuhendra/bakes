@@ -4,10 +4,10 @@ export function Hero() {
       <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
           <div className="flex-1 text-left">
-            <h1 className="font-[family-name:var(--font-title)] text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight text-foreground mb-6">
+            <h1 className="font-[family-name:var(--font-title)] text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-foreground mb-6">
               nom nom
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed max-w-md">
+            <p className="text-base md:text-lg text-muted-foreground font-light leading-relaxed max-w-md">
               Hi! I&apos;m Shannon—a home baker who loves baking to bring people together.
             </p>
           </div>

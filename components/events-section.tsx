@@ -8,10 +8,10 @@ export function EventsSection() {
     <section id="events" className="py-20 border-t border-border/50 bg-background">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-16 md:mb-20">
-          <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-3">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">
             Gatherings &amp; celebrations
           </p>
-          <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-bold text-foreground">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-foreground">
             My Events
           </h2>
         </div>
@@ -40,10 +40,10 @@ function EventCard({ event }: { event: Event }) {
           />
         )}
       </div>
-      <h3 className="text-xl font-medium text-foreground group-hover:text-muted-foreground transition-colors">
+      <h3 className="text-lg font-medium text-foreground group-hover:text-muted-foreground transition-colors">
         {event.name}
       </h3>
-      <p className="mt-2 text-muted-foreground text-base md:text-lg leading-relaxed">
+      <p className="mt-2 text-muted-foreground text-sm md:text-base leading-relaxed">
         {event.description}
        </p>
     </article>

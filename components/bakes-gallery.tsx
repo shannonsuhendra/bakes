@@ -112,10 +112,10 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="text-sm tracking-[0.3em] uppercase text-muted-foreground mb-3">
+            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">
               Fresh from the Oven
             </p>
-            <h2 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl font-bold text-foreground">
+            <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl font-bold text-foreground">
               My Bakes
             </h2>
           </div>
@@ -133,11 +133,11 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
               </DialogTrigger>
               <DialogContent className="sm:max-w-md bg-card max-h-[90vh] overflow-y-auto">
                 <DialogHeader>
-                  <DialogTitle className="text-2xl font-light">Add a New Creation</DialogTitle>
+                  <DialogTitle className="text-xl font-light">Add a New Creation</DialogTitle>
                 </DialogHeader>
                 <div className="space-y-4 pt-4">
                   <div>
-                    <label className="text-sm text-muted-foreground mb-2 block">Name</label>
+                    <label className="text-xs text-muted-foreground mb-2 block">Name</label>
                     <Input
                       placeholder="e.g., Sourdough Loaf"
                       value={newBake.name}
@@ -146,7 +146,7 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
                     />
                   </div>
                   <div>
-                    <label className="text-sm text-muted-foreground mb-2 block">Description</label>
+                    <label className="text-xs text-muted-foreground mb-2 block">Description</label>
                     <Textarea
                       placeholder="Tell us about this bake..."
                       value={newBake.description}
@@ -155,7 +155,7 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
                     />
                   </div>
                   <div>
-                    <label className="text-sm text-muted-foreground mb-2 block">Image URLs</label>
+                    <label className="text-xs text-muted-foreground mb-2 block">Image URLs</label>
                     <div className="space-y-2">
                       {newBake.images.map((img, index) => (
                         <div key={index} className="flex gap-2">
@@ -205,8 +205,8 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
         {bakes.length === 0 ? (
           <div className="text-center py-20 border border-dashed border-border rounded-lg">
             <ImageIcon className="h-12 w-12 mx-auto text-muted-foreground/50 mb-4" />
-            <p className="text-muted-foreground text-lg">No bakes yet</p>
-            <p className="text-muted-foreground/70 text-sm mt-1">Add your first creation to get started</p>
+            <p className="text-muted-foreground text-base">No bakes yet</p>
+            <p className="text-muted-foreground/70 text-xs mt-1">Add your first creation to get started</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -230,12 +230,12 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
       <Dialog open={isEditOpen} onOpenChange={setIsEditOpen}>
         <DialogContent className="sm:max-w-md bg-card max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-light">Edit Bake</DialogTitle>
+            <DialogTitle className="text-xl font-light">Edit Bake</DialogTitle>
           </DialogHeader>
           {editingBake && (
             <div className="space-y-4 pt-4">
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Name</label>
+                <label className="text-xs text-muted-foreground mb-2 block">Name</label>
                 <Input
                   placeholder="e.g., Sourdough Loaf"
                   value={editingBake.name}
@@ -244,7 +244,7 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
                 />
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Description</label>
+                <label className="text-xs text-muted-foreground mb-2 block">Description</label>
                 <Textarea
                   placeholder="Tell us about this bake..."
                   value={editingBake.description}
@@ -253,7 +253,7 @@ export function BakesGallery({ isAdmin = false }: BakesGalleryProps) {
                 />
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Image URLs</label>
+                <label className="text-xs text-muted-foreground mb-2 block">Image URLs</label>
                 <div className="space-y-2">
                   {editingBake.images.map((img, index) => (
                     <div key={index} className="flex gap-2">
@@ -330,7 +330,7 @@ function BakeCard({ bake, isAdmin, isSelected, onSelect, onClose, onDelete, onEd
           )}
         </div>
         <div className="cursor-pointer" onClick={onSelect}>
-          <h3 className="text-xl font-medium text-foreground group-hover:text-muted-foreground transition-colors">
+          <h3 className="text-lg font-medium text-foreground group-hover:text-muted-foreground transition-colors">
             {bake.name}
           </h3>
         </div>
@@ -350,7 +350,7 @@ function BakeCard({ bake, isAdmin, isSelected, onSelect, onClose, onDelete, onEd
           </div>
           <div className="p-6 md:p-8 flex flex-col">
             <DialogHeader>
-              <DialogTitle className="text-2xl md:text-3xl font-light">{bake.name}</DialogTitle>
+              <DialogTitle className="text-xl md:text-2xl font-light">{bake.name}</DialogTitle>
             </DialogHeader>
             {isAdmin && (
               <div className="mt-6 flex gap-2">

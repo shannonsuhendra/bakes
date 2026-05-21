@@ -10,7 +10,7 @@ export function Header() {
               window.history.replaceState(null, "", "/")
               window.scrollTo({ top: 0, behavior: "smooth" })
             }}
-            className="font-[family-name:var(--font-title)] text-3xl md:text-4xl font-bold tracking-tight text-foreground"
+            className="font-[family-name:var(--font-title)] text-2xl md:text-3xl font-bold tracking-tight text-foreground"
           >
             nom nom
           </a>
